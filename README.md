@@ -42,7 +42,7 @@ O **ArchDoc Versioner** é um repositório modelo para organizar, rastrear e evo
 ### 1. Clone o template
 
 ```bash
-git clone https://github.com/seu-org/archvault-versioner.git meu-projeto-arquitetura
+git clone https://github.com/guisantoslima/ArchVault-Versioner.git meu-projeto-arquitetura
 cd meu-projeto-arquitetura
 ```
 
@@ -95,6 +95,7 @@ git commit -m "feat(arch): adiciona ARCH-001 sobre escolha do banco de dados"
 │   └── verificar-links.sh
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
+├── LICENSE.md
 └── README.md
 ```
 
