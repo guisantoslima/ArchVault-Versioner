@@ -176,8 +176,10 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "3b52c7c2b8ce0cc0",
+  "active": "759c5b2fc5b367d2",
   "lastOpenFiles": [
+    "CHANGELOG.md",
+    "_changelog.md",
     "README.md",
     "docs/archs/_changelog.md",
     "CONTRIBUTING.md",
