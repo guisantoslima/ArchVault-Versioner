@@ -11,10 +11,14 @@
             "id": "2b9cac3e333a7877",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/archs/_template.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "_template"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.5
+    "width": 330.5
   },
   "right": {
     "id": "64474bba10aefb24",
@@ -178,13 +182,13 @@
   },
   "active": "2b9cac3e333a7877",
   "lastOpenFiles": [
-    "README.md",
-    "_changelog.md",
     "CHANGELOG.md",
-    "docs/archs/_changelog.md",
     "CONTRIBUTING.md",
-    "Bem-vindo.md",
+    "README.md",
     "docs/archs/_template.md",
+    "_changelog.md",
+    "docs/archs/_changelog.md",
+    "Bem-vindo.md",
     "docs/archs",
     "docs"
   ]
