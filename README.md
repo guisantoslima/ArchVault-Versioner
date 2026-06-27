@@ -82,8 +82,8 @@ git commit -m "feat(arch): adiciona ARCH-001 sobre escolha do banco de dados"
 ```text
 📦 archvault-versioner
 ├── 📁 docs/
-│   ├── 📁 archs/                    # Architecture Decision Records
-│   │   ├── ARCH-001-exemplo.md
+│   ├── 📁 adrs/                    # Architecture Decision Records
+│   │   ├── ADR-001-exemplo.md
 │   │   └── _template.md
 │   ├── 📁 diagramas/               # C4, UML, fluxos de dados
 │   │   ├── c4-contexto.puml
@@ -117,10 +117,10 @@ git commit -m "feat(arch): adiciona ARCH-001 sobre escolha do banco de dados"
 
 ```mermaid
 graph LR
-    A[Identifica necessidade<br/>de mudança] --> B{Cria novo ARCH<br/>ou atualiza doc?}
-    B -->|Novo| C[Copia template<br/>de ARCH]
+    A[Identifica necessidade<br/>de mudança] --> B{Cria novo ADR<br/>ou atualiza doc?}
+    B -->|Novo| C[Copia template<br/>de ADR]
     B -->|Atualiza| D[Edita documento<br/>existente]
-    C --> E[Abre branch<br/>feat/arch-NNN]
+    C --> E[Abre branch<br/>feat/adr-NNN]
     D --> E
     E --> F[Commit com<br/>Conventional Commits]
     F --> G[Abre Pull Request]
@@ -137,7 +137,7 @@ Use **Conventional Commits** para manter o histórico legível e gerar changelog
 
 | Tipo           | Quando usar                 | Exemplo                                                 |
 | -------------- | --------------------------- | ------------------------------------------------------- |
-| `feat(arch)`   | Nova decisão arquitetural   | `feat(adr): ADR-003 escolha de message broker`          |
+| `feat(adr)`   | Nova decisão arquitetural   | `feat(adr): ADR-003 escolha de message broker`          |
 | `docs(diag)`   | Novo ou atualizado diagrama | `docs(diag): atualiza C4 de containers`                 |
 | `docs(visao)`  | Nova visão arquitetural     | `docs(visao): adiciona visão de segurança`              |
 | `fix(gloss)`   | Correção no glossário       | `fix(gloss): corrige definição de saga`                 |
@@ -159,7 +159,7 @@ Aplicamos versionamento semântico ao conteúdo do repositório:
 
 ### 🏛️ ADR — Architecture Decision Record
 
-Acesse o template completo em [`docs/archs/_template.md`](_template.md) ou use o script:
+Acesse o template completo em [`docs/adrs/_template.md`](_template.md) ou use o script:
 
 ```bash
 ./scripts/novo-arch.sh "escolha do message broker"
@@ -188,7 +188,7 @@ SHOW_LEGEND()
 
 1. Leia o [`CONTRIBUTING.md`](CONTRIBUTING.md).
 2. Verifique se já existe uma [issue](https://github.com/seu-org/archvault-versioner/issues) relacionada.
-3. Crie uma branch a partir da `main`: `feat/arch-NNN-descricao-curta`.
+3. Crie uma branch a partir da `main`: `feat/adr-NNN-descricao-curta`.
 4. Faça commits claros com Conventional Commits.
 5. Abra um Pull Request usando o template fornecido.
 6. Solicite revisão de pelo menos **1 arquiteto ou tech lead**.
@@ -208,14 +208,9 @@ SHOW_LEGEND()
 Mudanças documentadas seguem o formato [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ```text
-## [Unreleased]
 
-## [1.0.0] - 2026-06-27
-### Added
-- Estrutura inicial do repositório.
-- Template de ARCH.
-- Workflows de CI para verificação de links e diagramas.
-- Scripts auxiliares para criação de ARCHs.
+ Versão | Data| Solution Request| Feature| Branch | Responsável| Changes (PR)
+
 ```
 
 Veja o histórico completo em [`CHANGELOG.md`](CHANGELOG.md).
@@ -238,6 +233,7 @@ Veja o histórico completo em [`CHANGELOG.md`](CHANGELOG.md).
 ## 📚 Leitura recomendada
 
 - 📖 [Documenting Software Architectures](https://www.amazon.com/Documenting-Software-Architectures-Views-Beyond/dp/0321552687)
+- 📖 [Fundamentals of Software Architecture: A Modern Engineering Approach](https://www.amazon.com.br/Fundamentals-Software-Architecture-Engineering-Approach/dp/1098175514/)
 - 📖 [Architecture Decision Records](https://adr.github.io/)
 - 📖 [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)
 - 📖 [C4 Model](https://c4model.com/)

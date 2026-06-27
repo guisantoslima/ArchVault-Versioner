@@ -182,6 +182,8 @@
   },
   "active": "9081c5d8d4fcc9e6",
   "lastOpenFiles": [
+    "docs/adrs/_template.md",
+    "docs/adrs",
     "docs/archs/_template.md",
     "CHANGELOG.md",
     "CONTRIBUTING.md",
