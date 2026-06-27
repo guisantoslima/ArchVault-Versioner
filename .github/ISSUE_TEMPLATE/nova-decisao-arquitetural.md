@@ -1,9 +1,9 @@
 ---
-name: 🏛️ Nova decisão arquitetural
-about: Propor uma nova ADR (Architecture Decision Record) para o projeto
-title: "[ADR-NNN] "
-labels: ["adr", "discussão"]
-assignees: []
+Name: 🏛️ Nova decisão arquitetural
+About: Propor uma nova ADR (Architecture Decision Record) para o projeto
+Title: "[ADR-NNN] "
+Labels: ["adr", "discussão"]
+Assignees: [@guisantoslima]
 ---
 
 ## 🎯 Contexto
@@ -38,6 +38,6 @@ assignees: []
 
 ## ✅ Checklist antes de abrir o PR
 
-- [ ] Defini um número sequencial para a ADR (ex.: `ADR-004`).
-- [ ] Vou usar o template `docs/adrs/_template.md` como base.
-- [ ] Vou seguir a convenção de branch `feat/adr-NNN-descricao-curta`.
+- [ ] Número sequencial para a ADR (ex.: `ADR-004`).
+- [ ] Usar o template `docs/adrs/_template.md` como base.
+- [ ] Seguir a convenção de branch `feat/adr-NNN-descricao-curta`.

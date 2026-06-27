@@ -17,7 +17,7 @@ assignees: []
 - [ ] Conteúdo desatualizado ou incorreto
 - [ ] Link quebrado (interno ou externo)
 - [ ] Diagrama desatualizado ou com erro de renderização
-- [ ] Erro de formatação / typo
+- [ ] Erro de formatação / tipo
 - [ ] Outro (descreva abaixo)
 
 ## 📝 Descrição detalhada
@@ -34,6 +34,7 @@ assignees: []
 
 ## ✅ Checklist antes de abrir o PR
 
-- [ ] Verifiquei se já não existe uma issue semelhante aberta.
-- [ ] Vou seguir a convenção de branch `fix/gloss-*` ou `docs/visao-*`, conforme o caso.
-- [ ] Vou atualizar a tabela `[Unreleased]` do `CHANGELOG.md` ao abrir o PR.
+- [ ] Validar existência de uma issue semelhante aberta.
+- [ ] Verificar interdependências existentes.
+- [ ] Seguir a convenção de branch `docs/diag-*` ou `docs/visao-*`, conforme o caso.
+- [ ] Atualizar a tabela `[Unreleased]` do `CHANGELOG.md` ao abrir o PR.
