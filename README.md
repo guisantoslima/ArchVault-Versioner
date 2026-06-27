@@ -1,8 +1,13 @@
 # 🏛️ ArchVault Versioner
 
 <p align="center">
+  
   <img src="https://img.shields.io/badge/Git-2.40+-F05032?logo=git&logoColor=white" alt="Git 2.40+">
+  
+  <a href="https://github.com/guisantoslima/ArchVault-Versioner">
   <img src="https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white" alt="GitHub Repo">
+  </a>
+  
   <img src="https://img.shields.io/badge/Markdown-Docs-000000?logo=markdown&logoColor=white" alt="Markdown Docs">
   <img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-FE5196?logo=conventionalcommits&logoColor=white" alt="Conventional Commits">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT">
