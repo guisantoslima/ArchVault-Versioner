@@ -2,15 +2,22 @@
 
 <p align="center">
   
+  <a href="https://git-scm.com">
   <img src="https://img.shields.io/badge/Git-2.40+-F05032?logo=git&logoColor=white" alt="Git 2.40+">
-  
+  </a>
+
   <a href="https://github.com/guisantoslima/ArchVault-Versioner">
   <img src="https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white" alt="GitHub Repo">
   </a>
-  
-  <img src="https://img.shields.io/badge/Markdown-Docs-000000?logo=markdown&logoColor=white" alt="Markdown Docs">
+
+  <a href="https://github.com/guisantoslima/ArchVault-Versioner/commits/main/">
   <img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-FE5196?logo=conventionalcommits&logoColor=white" alt="Conventional Commits">
+  </a>
+
+  <a href="https://github.com/guisantoslima/ArchVault-Versioner/blob/main/LICENSE">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT">
+  </a>
+
 </p>
 
 <p align="center">
@@ -180,7 +187,7 @@ SHOW_LEGEND()
 ## 🤝 Como contribuir
 
 1. Leia o [`CONTRIBUTING.md`](CONTRIBUTING.md).
-2. Verifique se já existe uma [issue](https://github.com/seu-org/archdoc-versioner/issues) relacionada.
+2. Verifique se já existe uma [issue](https://github.com/seu-org/archvault-versioner/issues) relacionada.
 3. Crie uma branch a partir da `main`: `feat/arch-NNN-descricao-curta`.
 4. Faça commits claros com Conventional Commits.
 5. Abra um Pull Request usando o template fornecido.
@@ -211,7 +218,7 @@ Mudanças documentadas seguem o formato [Keep a Changelog](https://keepachangelo
 - Scripts auxiliares para criação de ARCHs.
 ```
 
-Veja o histórico completo em [`CHANGELOG.md`](_changelog.md).
+Veja o histórico completo em [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
