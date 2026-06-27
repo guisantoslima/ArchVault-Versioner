@@ -137,7 +137,7 @@ Use **Conventional Commits** para manter o histórico legível e gerar changelog
 
 | Tipo           | Quando usar                 | Exemplo                                                 |
 | -------------- | --------------------------- | ------------------------------------------------------- |
-| `feat(adr)`   | Nova decisão arquitetural   | `feat(adr): ADR-003 escolha de message broker`          |
+| `feat(adr)`    | Nova decisão arquitetural   | `feat(adr): ADR-003 escolha de message broker`          |
 | `docs(diag)`   | Novo ou atualizado diagrama | `docs(diag): atualiza C4 de containers`                 |
 | `docs(visao)`  | Nova visão arquitetural     | `docs(visao): adiciona visão de segurança`              |
 | `fix(gloss)`   | Correção no glossário       | `fix(gloss): corrige definição de saga`                 |
@@ -150,7 +150,7 @@ Aplicamos versionamento semântico ao conteúdo do repositório:
 | Versão  | Significado                           | Exemplo  |
 | ------- | ------------------------------------- | -------- |
 | `MAJOR` | Arquitetura completamente redesenhada | `v2.0.0` |
-| `MINOR` | Nova ARCH, nova visão, novo diagrama  | `v1.3.0` |
+| `MINOR` | Nova ADR, nova visão, novo diagrama   | `v1.3.0` |
 | `PATCH` | Correções, revisões menores, typo     | `v1.3.2` |
 
 ---
@@ -251,7 +251,7 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 </p>
 
 <p align="center">
-  <a href="#-archdoc-versioner">⬆️ Voltar ao topo</a>
+  <a href="#-archvault-versioner">⬆️ Voltar ao topo</a>
 </p>
 
 ---
