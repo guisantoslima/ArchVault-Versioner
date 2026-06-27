@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5cd69f0ef9af22d2",
+        "id": "78ca96acbf1345ef",
         "type": "tabs",
         "children": [
           {
-            "id": "759c5b2fc5b367d2",
+            "id": "2b9cac3e333a7877",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização em gráfico"
+              "icon": "lucide-file",
+              "title": "Nova aba"
             }
           }
         ]
@@ -176,11 +176,11 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "759c5b2fc5b367d2",
+  "active": "2b9cac3e333a7877",
   "lastOpenFiles": [
-    "CHANGELOG.md",
-    "_changelog.md",
     "README.md",
+    "_changelog.md",
+    "CHANGELOG.md",
     "docs/archs/_changelog.md",
     "CONTRIBUTING.md",
     "Bem-vindo.md",

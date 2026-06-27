@@ -218,7 +218,7 @@ Mudanças documentadas seguem o formato [Keep a Changelog](https://keepachangelo
 - Scripts auxiliares para criação de ARCHs.
 ```
 
-Veja o histórico completo em [`CHANGELOG.md`](_changelog.md).
+Veja o histórico completo em [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
