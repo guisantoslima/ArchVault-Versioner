@@ -162,7 +162,7 @@ Aplicamos versionamento semântico ao conteúdo do repositório:
 Acesse o template completo em [`docs/adrs/_template.md`](_template.md) ou use o script:
 
 ```bash
-./scripts/novo-arch.sh "escolha do message broker"
+./scripts/novo-adr.sh "escolha do message broker"
 ```
 
 ### 🖼️ Diagrama C4 — PlantUML
