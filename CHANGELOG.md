@@ -18,7 +18,7 @@ Formatado e baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0
 
 > Mudanças em andamento, ainda não publicadas em uma versão oficial. Cada linha representa um PR. Ao fechar o release, consolide essas linhas nas categorias padrão (`Added`, `Changed`, `Fixed`, etc.) na seção da nova versão.
 
-|Versão|Data|Solution Request|Feature|Branch|Responsável|Changes (PR)|
-|---|---|---|---|---|---|---|
-|2.2.0|2026-06-20|[SR-1042](https://jira.org/browse/SR-1042)|Seção de FAQ na documentação de instalação|`docs/faq-instalacao`|@joao.silva|[#142](https://github.com/org/repo/pull/142)|
-|2.2.0|2026-06-24|[SR-1058](https://jira.org/browse/SR-1058)|Reorganização do índice principal|`docs/reorganiza-indice`|@maria.santos|[#145](https://github.com/org/repo/pull/145)|
+| Versão | Data       | Solution Request                           | Feature                                    | Branch                   | Responsável   | Changes (PR)                                 |
+| ------ | ---------- | ------------------------------------------ | ------------------------------------------ | ------------------------ | ------------- | -------------------------------------------- |
+| 2.2.0  | 2026-06-20 | [SR-1042](https://jira.org/browse/SR-1042) | Seção de FAQ na documentação de instalação | `docs/faq-instalacao`    | @joao.silva   | [#142](https://github.com/org/repo/pull/142) |
+| 2.2.0  | 2026-06-24 | [SR-1058](https://jira.org/browse/SR-1058) | Reorganização do índice principal          | `docs/reorganiza-indice` | @maria.santos | [#145](https://github.com/org/repo/pull/145) |
