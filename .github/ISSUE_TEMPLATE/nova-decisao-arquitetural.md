@@ -2,7 +2,7 @@
 Name: 🏛️ Nova decisão arquitetural
 About: Propor uma nova ADR (Architecture Decision Record) para o projeto
 Title: "[ADR-NNN] "
-Labels: ["adr", "discussao"]
+Labels: ["adr", "discussão"]
 Assignees: [@guisantoslima]
 ---
 
