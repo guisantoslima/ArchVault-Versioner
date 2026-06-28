@@ -1,7 +1,6 @@
 # 🏛️ ArchVault Versioner
 
 <p align="center">
-  <img align=right display="flex" alt="logo" height="200" src="https://raw.githubusercontent.com/guisantoslima/ArchVault-Versioner/refs/heads/main/img/ArchVault-Versioner-logo.png" alt="ArchVault">
 
   <a href="https://git-scm.com">
   <img src="https://img.shields.io/badge/Git-2.40+-F05032?logo=git&logoColor=white" alt="Git 2.40+">
@@ -20,6 +19,8 @@
   </a>
 
 </p>
+
+  <img align=right display="flex" alt="logo" height="200" src="https://raw.githubusercontent.com/guisantoslima/ArchVault-Versioner/refs/heads/main/img/ArchVault-Versioner-logo.png" alt="ArchVault">
 
 <strong>Versionamento inteligente de documentação arquitetural usando Git & GitHub como fonte única da verdade.</strong>
 
