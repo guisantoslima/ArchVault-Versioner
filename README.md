@@ -18,8 +18,6 @@
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT">
   </a>
 
-  <img align=center alt="logo" height="200" src="https://raw.githubusercontent.com/guisantoslima/ArchVault-Versioner/refs/heads/main/img/ArchVault-Versioner-logo.png" alt="ArchVault">
-
 <strong>Versionamento inteligente de documentação arquitetural usando Git & GitHub como fonte única da verdade.</strong>
 </p>
 
@@ -32,9 +30,13 @@
 
 ## 🎯 Visão geral
 
+  <img align=left alt="logo" height="200" style="padding:10px;" src="https://raw.githubusercontent.com/guisantoslima/ArchVault-Versioner/refs/heads/main/img/ArchVault-Versioner-logo.png" alt="ArchVault">
+
 O **ArchDoc Versioner** é um repositório modelo para organizar, rastrear e evoluir documentação arquitetural de software com o mesmo rigor usado para código-fonte, utilizando o poder de correlação e centralização de documentação da ferramenta Obsidian.
 
 > *"Arquitetura que não é versionada é arquitetura que não existe."*
+
+</br>
 
 ### ✨ Por que versionar documentação arquitetural?
 
