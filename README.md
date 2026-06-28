@@ -24,7 +24,7 @@
 <strong>Versionamento inteligente de documentação arquitetural usando Git & GitHub como fonte única da verdade.</strong>
 
 
-## 📑 Navegue pelo projeto
+### 📑 Navegue pelo projeto
 
 | 🚀 [Início rápido](#-início-rápido) | 🏗️ [Estrutura](#-estrutura-do-repositório) | 📋 [Workflow](#-workflow-de-versionamento) | 🤝 [Contribuição](#-como-contribuir) | 📜 [Changelog](#-changelog) |
 |:-----------------------------------:|:------------------------------------------:|:-------------------------------------------:|:------------------------------------:|:---------------------------:|
