@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e50e6436b12edb8d",
+        "id": "d0500d7a51fe8f3b",
         "type": "tabs",
         "children": [
           {
-            "id": "709ae85c1752dea0",
+            "id": "1293241566882f5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "ArchVault/docs/adrs/views/visao-desenvolvimento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "visao-desenvolvimento"
             }
           }
         ]
@@ -180,25 +180,26 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "709ae85c1752dea0",
+  "active": "3b52c7c2b8ce0cc0",
   "lastOpenFiles": [
-    "CONTRIBUTING.md",
-    "CHANGELOG.md",
-    "docs/roadmaps/roadmap-2026.md",
-    "docs/adrs/ADR-001-fluxo-finalizacao-compra.md",
-    "docs/adrs/views/visao-processos.md",
-    "docs/adrs/views/visao-logica.md",
-    "docs/adrs/views/visao-fisica.md",
-    "docs/adrs/views/visao-desenvolvimento.md",
-    "docs/adrs/views/visao-cenarios.md",
+    "ArchVault",
+    "ArchVault/docs/adrs/views/visao-fisica.md",
+    "ArchVault/docs/adrs/views/visao-logica.md",
+    "ArchVault/docs/adrs/views/visao-processos.md",
+    "ArchVault/docs/adrs/ADR-001-fluxo-finalizacao-compra.md",
     "README.md",
-    "docs/adrs/_template.md",
-    "docs/adrs",
+    "ArchVault/CONTRIBUTING.md",
+    "ArchVault/CHANGELOG.md",
+    "ArchVault/docs/roadmaps/roadmap-2026.md",
+    "ArchVault/docs/adrs/views/visao-desenvolvimento.md",
+    "ArchVault/docs/adrs/views/visao-cenarios.md",
+    "ArchVault/docs/adrs/_template.md",
+    "ArchVault/docs/adrs",
     "docs/archs/_template.md",
     "_changelog.md",
     "docs/archs/_changelog.md",
     "Bem-vindo.md",
     "docs/archs",
-    "docs"
+    "ArchVault/docs"
   ]
 }

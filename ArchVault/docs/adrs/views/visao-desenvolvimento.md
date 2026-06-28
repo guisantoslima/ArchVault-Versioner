@@ -116,8 +116,8 @@ graph TB
 
 ## 6. Rastreabilidade
 
-| Pacote/Módulo | Componente C4 (C3) | Visão Lógica relacionada |
-| --- | --- | --- |
-| `services/pedido.service.ts` | Serviço de Pedidos | [Pedido, Finalização de Compra](visao-logica.md) |
-| `services/pagamento.service.ts` | Serviço de Pagamento | [Módulo de Pagamento](visao-logica.md) |
-| `repositories/produto.repository.ts` | Repositório de Produtos | [Catálogo de Produtos](visao-logica.md) |
+| Pacote/Módulo                        | Componente C4 (C3)      | Visão Lógica relacionada                         |
+| ------------------------------------ | ----------------------- | ------------------------------------------------ |
+| `services/pedido.service.ts`         | Serviço de Pedidos      | [Pedido, Finalização de Compra](visao-logica.md) |
+| `services/pagamento.service.ts`      | Serviço de Pagamento    | [Módulo de Pagamento](visao-logica.md)           |
+| `repositories/produto.repository.ts` | Repositório de Produtos | [Catálogo de Produtos](visao-logica.md)          |
