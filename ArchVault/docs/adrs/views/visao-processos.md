@@ -82,8 +82,8 @@ sequenceDiagram
 
 ## 6. Rastreabilidade
 
-| Processo | Container envolvido (C2) | Componente envolvido (C3) | ADR relacionada |
-| --- | --- | --- | --- |
-| Reserva de estoque | API de Aplicação, Banco de Dados | Serviço de Carrinho, Serviço de Catálogo | [`ARCH-001`](../adrs/ARCH-001-fluxo-finalizacao-compra.md) |
-| Cobrança | API de Aplicação | Serviço de Pagamento | [`ARCH-001`](../adrs/ARCH-001-fluxo-finalizacao-compra.md) |
-| Notificação assíncrona | Fila de Processamento de Pedidos | Serviço de Pedidos | [`ARCH-001`](../adrs/ARCH-001-fluxo-finalizacao-compra.md) |
+| Processo               | Container envolvido (C2)         | Componente envolvido (C3)                | ADR relacionada                                          |
+| ---------------------- | -------------------------------- | ---------------------------------------- | -------------------------------------------------------- |
+| Reserva de estoque     | API de Aplicação, Banco de Dados | Serviço de Carrinho, Serviço de Catálogo | [`ADR-001`](../adrs/ADR-001-fluxo-finalizacao-compra.md) |
+| Cobrança               | API de Aplicação                 | Serviço de Pagamento                     | [`ADR-001`](../adrs/ADR-001-fluxo-finalizacao-compra.md) |
+| Notificação assíncrona | Fila de Processamento de Pedidos | Serviço de Pedidos                       | [`ADR-001`](../adrs/ADR-001-fluxo-finalizacao-compra.md) |

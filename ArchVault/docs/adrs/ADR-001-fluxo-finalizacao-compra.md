@@ -180,7 +180,7 @@ para monitorar e manter disponível).
 
 ### 7.2 Vínculo com o roadmap do projeto
 
-- Roadmap relacionado: [`docs/roadmaps/roadmap-2026.md`](../roadmaps/roadmap-2026.md)
+- Roadmap relacionado: [`docs/roadmaps/roadmap-2026.md`](roadmap-2026.md)
 - Marco/release alvo: `v1.2.0`
 
 ### 7.3 Plano de implementação e migração

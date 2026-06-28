@@ -133,6 +133,6 @@ classDiagram
 
 ## 6. Rastreabilidade
 
-| Funcionalidade | ADR relacionada | Visão de Processos | Diagrama C4 |
-| --- | --- | --- | --- |
-| Finalização de Compra | [`ARCH-001`](../adrs/ARCH-001-fluxo-finalizacao-compra.md) | [Visão de Processos](visao-processos.md) | C2, C3 |
+| Funcionalidade        | ADR relacionada                                          | Visão de Processos                       | Diagrama C4 |
+| --------------------- | -------------------------------------------------------- | ---------------------------------------- | ----------- |
+| Finalização de Compra | [`ADR-001`](../adrs/ADR-001-fluxo-finalizacao-compra.md) | [Visão de Processos](visao-processos.md) | C2, C3      |

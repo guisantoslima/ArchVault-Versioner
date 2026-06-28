@@ -94,8 +94,8 @@ graph TB
 
 ## 5. Rastreabilidade
 
-| Recurso de infraestrutura | Container (C2) | ADR relacionada |
-| --- | --- | --- |
-| EKS — API de Aplicação | API de Aplicação | [`ARCH-001`](../adrs/ARCH-001-fluxo-finalizacao-compra.md) |
-| RDS PostgreSQL | Banco de Dados | [`ARCH-001`](../adrs/ARCH-001-fluxo-finalizacao-compra.md) |
-| RabbitMQ em Kubernetes | Fila de Processamento de Pedidos | [`ARCH-001`](../adrs/ARCH-001-fluxo-finalizacao-compra.md) |
+| Recurso de infraestrutura | Container (C2)                   | ADR relacionada                                          |
+| ------------------------- | -------------------------------- | -------------------------------------------------------- |
+| EKS — API de Aplicação    | API de Aplicação                 | [`ADR-001`](../adrs/ADR-001-fluxo-finalizacao-compra.md) |
+| RDS PostgreSQL            | Banco de Dados                   | [`ADR-001`](../adrs/ADR-001-fluxo-finalizacao-compra.md) |
+| RabbitMQ em Kubernetes    | Fila de Processamento de Pedidos | [`ADR-001`](../adrs/ADR-001-fluxo-finalizacao-compra.md) |
