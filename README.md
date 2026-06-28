@@ -83,14 +83,23 @@ git commit -m "feat(arch): adiciona ARCH-001 sobre escolha do banco de dados"
 📦 archvault-versioner
 ├── 📁 docs/
 │   ├── 📁 adrs/                    # Architecture Decision Records
-│   │   ├── ADR-001-exemplo.md
+│   │   ├── ADR-001-ex.md
 │   │   └── _template.md
-│   ├── 📁 diagramas/               # C4, UML, fluxos de dados
-│   │   ├── c4-contexto.puml
-│   │   └── c4-container.puml
-│   ├── 📁 visoes/                  # Visões arquiteturais (lógica, física, etc.)
+│   ├── 📁 diagrams/               # C4, UML, fluxos de dados
+│   │   ├── 📁 C1
+│   │   │   └── contexto-ex.puml
+│   │   ├── 📁 C2
+│   │   │   └── container-ex.puml
+│   │   ├── 📁 C3
+│   │   │   └── component-ex.puml
+│   │   ├── 📁 C4
+│   │   │   └── code-ex.puml
+│   ├── 📁 views/                  # Visões arquiteturais (lógica, física, etc.)
 │   │   ├── visao-logica.md
-│   │   └── visao-deploy.md
+│   │   ├── visao-processos.md
+│   │   ├── visao-desenvolvimento.md
+│   │   ├── visao-fisica.md
+│   │   └── visao-cenarios.md
 │   ├── 📁 glossario/               # Termos do domínio
 │   │   └── termos.md
 │   └── README.md                   # Guia de navegação dos docs
