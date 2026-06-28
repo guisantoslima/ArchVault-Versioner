@@ -1,0 +1,77 @@
+@startuml C4_Code_ServicoPedidos_ShopSimples
+
+title Diagrama de Código (C4 Nível 4) — Serviço de Pedidos
+' Detalha internamente o componente "Serviço de Pedidos" do diagrama C3
+' Nível Code não possui notação própria no C4 model; usa-se UML clássico (Diagrama de Classes)
+
+skinparam classAttributeIconSize 0
+
+class OrderController {
+  + criarPedido(req, res): Promise<void>
+  + consultarStatus(req, res): Promise<void>
+}
+
+class OrderService {
+  - cartService: CartService
+  - paymentService: PaymentService
+  - orderRepository: OrderRepository
+  - orderQueuePublisher: OrderQueuePublisher
+  + criarPedido(carrinho: Cart, cliente: Cliente): Promise<Order>
+  + atualizarStatus(pedidoId: string, status: OrderStatus): Promise<void>
+  - validarEstoque(itens: CartItem[]): Promise<boolean>
+}
+
+class CartService {
+  + obterCarrinho(clienteId: string): Promise<Cart>
+  + calcularSubtotal(carrinho: Cart): number
+}
+
+class PaymentService {
+  + solicitarCobranca(pedido: Order): Promise<PaymentResult>
+}
+
+class OrderRepository {
+  + salvar(pedido: Order): Promise<Order>
+  + buscarPorId(pedidoId: string): Promise<Order>
+  + atualizarStatus(pedidoId: string, status: OrderStatus): Promise<void>
+}
+
+class OrderQueuePublisher {
+  + publicarNovoPedido(pedido: Order): Promise<void>
+}
+
+class Order {
+  + id: string
+  + clienteId: string
+  + itens: OrderItem[]
+  + valorTotal: number
+  + status: OrderStatus
+  + dataCriacao: Date
+  + calcularTotal(): number
+}
+
+class OrderItem {
+  + produtoId: string
+  + quantidade: number
+  + precoUnitario: number
+}
+
+enum OrderStatus {
+  AGUARDANDO_PAGAMENTO
+  PAGO
+  EM_SEPARACAO
+  ENVIADO
+  ENTREGUE
+  CANCELADO
+}
+
+OrderController --> OrderService : usa
+OrderService --> CartService : usa
+OrderService --> PaymentService : usa
+OrderService --> OrderRepository : usa
+OrderService --> OrderQueuePublisher : usa
+OrderService ..> Order : cria/atualiza
+Order "1" *-- "1..*" OrderItem : contém
+Order --> OrderStatus : possui
+
+@enduml

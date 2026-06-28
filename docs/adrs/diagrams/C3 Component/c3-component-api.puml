@@ -1,0 +1,59 @@
+@startuml C3_Component_API_ShopSimples
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Diagrama de Componentes — API de Aplicação (C3)
+' Detalha o container "API de Aplicação (Node.js, Express)" do diagrama C2
+
+Container(spa_web, "Aplicação Web", "React, TypeScript", "Interface do cliente")
+Container(painel_admin, "Painel Administrativo", "React, TypeScript", "Interface do operador")
+
+Container_Boundary(api, "API de Aplicação (Node.js, Express)") {
+    Component(controller_catalogo, "Controller de Catálogo", "Express Router", "Expõe endpoints REST de listagem e detalhe de produtos")
+    Component(controller_carrinho, "Controller de Carrinho", "Express Router", "Expõe endpoints REST para adicionar/remover itens do carrinho")
+    Component(controller_pedido, "Controller de Pedidos", "Express Router", "Expõe endpoints REST para criar pedido e consultar status")
+    Component(controller_usuario, "Controller de Usuários", "Express Router", "Expõe endpoints REST de cadastro, login e perfil")
+
+    Component(servico_catalogo, "Serviço de Catálogo", "Módulo de Domínio", "Regras de consulta e disponibilidade de produtos")
+    Component(servico_carrinho, "Serviço de Carrinho", "Módulo de Domínio", "Regras de cálculo de subtotal e validação de estoque")
+    Component(servico_pedido, "Serviço de Pedidos", "Módulo de Domínio", "Orquestra criação do pedido, reserva de estoque e disparo de pagamento")
+    Component(servico_pagamento, "Serviço de Pagamento", "Módulo de Domínio", "Integra com o Gateway de Pagamento externo")
+    Component(servico_usuario, "Serviço de Usuários", "Módulo de Domínio", "Regras de autenticação e gestão de conta")
+
+    Component(repo_produto, "Repositório de Produtos", "Camada de Dados (Sequelize/Prisma)", "Acesso à tabela de produtos")
+    Component(repo_pedido, "Repositório de Pedidos", "Camada de Dados (Sequelize/Prisma)", "Acesso às tabelas de pedido e itens de pedido")
+    Component(repo_usuario, "Repositório de Usuários", "Camada de Dados (Sequelize/Prisma)", "Acesso à tabela de usuários")
+}
+
+ContainerDb(banco_dados, "Banco de Dados", "PostgreSQL", "Armazena produtos, usuários, pedidos e pagamentos")
+Container(fila_pedidos, "Fila de Processamento de Pedidos", "RabbitMQ", "Processamento assíncrono de pagamento e nota fiscal")
+System_Ext(gateway_pagamento, "Gateway de Pagamento", "Processa cobranças")
+
+Rel(spa_web, controller_catalogo, "Consulta produtos", "JSON/HTTPS")
+Rel(spa_web, controller_carrinho, "Gerencia carrinho", "JSON/HTTPS")
+Rel(spa_web, controller_pedido, "Cria/consulta pedidos", "JSON/HTTPS")
+Rel(spa_web, controller_usuario, "Login/cadastro", "JSON/HTTPS")
+Rel(painel_admin, controller_catalogo, "Gerencia produtos", "JSON/HTTPS")
+Rel(painel_admin, controller_pedido, "Atualiza status de pedidos", "JSON/HTTPS")
+
+Rel(controller_catalogo, servico_catalogo, "Usa")
+Rel(controller_carrinho, servico_carrinho, "Usa")
+Rel(controller_pedido, servico_pedido, "Usa")
+Rel(controller_usuario, servico_usuario, "Usa")
+
+Rel(servico_carrinho, servico_catalogo, "Valida disponibilidade")
+Rel(servico_pedido, servico_carrinho, "Confirma itens do carrinho")
+Rel(servico_pedido, servico_pagamento, "Solicita cobrança")
+Rel(servico_pagamento, gateway_pagamento, "Chama API externa", "HTTPS/REST")
+
+Rel(servico_catalogo, repo_produto, "Usa")
+Rel(servico_pedido, repo_pedido, "Usa")
+Rel(servico_usuario, repo_usuario, "Usa")
+
+Rel(repo_produto, banco_dados, "SQL", "TCP")
+Rel(repo_pedido, banco_dados, "SQL", "TCP")
+Rel(repo_usuario, banco_dados, "SQL", "TCP")
+
+Rel(servico_pedido, fila_pedidos, "Publica evento NovoPedido", "AMQP")
+
+SHOW_LEGEND()
+@enduml
