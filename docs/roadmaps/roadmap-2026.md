@@ -7,11 +7,11 @@
 
 ## Marcos (Releases)
 
-| Versão | Tema | Work Packages | ADR de origem | Status |
-| --- | --- | --- | --- | --- |
-| `v1.1.0` | Infraestrutura de mensageria e reserva de estoque transacional | WP1, WP2 | [`ARCH-001`](../adrs/ARCH-001-fluxo-finalizacao-compra.md) | Em andamento |
-| `v1.2.0` | Processamento assíncrono pós-pedido (e-mail, NF, expiração de reserva) | WP3, WP4 | [`ARCH-001`](../adrs/ARCH-001-fluxo-finalizacao-compra.md) | Planejado |
-| `v1.3.0` | Gestão de catálogo com preços promocionais por período | A definir | _A definir_ | Backlog |
+| Versão   | Tema                                                                   | Work Packages | ADR de origem                                            | Status       |
+| -------- | ---------------------------------------------------------------------- | ------------- | -------------------------------------------------------- | ------------ |
+| `v1.1.0` | Infraestrutura de mensageria e reserva de estoque transacional         | WP1, WP2      | [`ADR-001`](../adrs/ADR-001-fluxo-finalizacao-compra.md) | Em andamento |
+| `v1.2.0` | Processamento assíncrono pós-pedido (e-mail, NF, expiração de reserva) | WP3, WP4      | [`ADR-001`](../adrs/DR-001-fluxo-finalizacao-compra.md)  | Planejado    |
+| `v1.3.0` | Gestão de catálogo com preços promocionais por período                 | A definir     | _A definir_                                              | Backlog      |
 
 ---
 

@@ -1,15 +1,15 @@
 # ARCH-001 — Fluxo de Finalização de Compra com Reserva de Estoque e Pagamento Assíncrono
 
-| Campo | Valor |
-| --- | --- |
-| **Status** | `Aprovado` |
-| **Fase ADM** | `B — Business Architecture` |
-| **Versão do documento** | `1.0` |
-| **Data** | 2026-05-12 |
-| **Responsável (Architecture Owner)** | @ana.arquiteta |
-| **Stakeholders envolvidos** | João Lima (Product Owner) — Carla Souza (Operações/Logística) |
-| **Solution Request / Card** | [SR-2201](https://jira.shopsimples.com/browse/SR-2201) |
-| **Substitui / Substituído por** | N/A |
+| Campo                                | Valor                                                         |
+| ------------------------------------ | ------------------------------------------------------------- |
+| **Status**                           | `Aprovado`                                                    |
+| **Fase**                             | `Business Architecture`                                       |
+| **Versão do documento**              | `1.0`                                                         |
+| **Data**                             | 2026-05-12                                                    |
+| **Responsável (Architecture Owner)** | @ana.arquiteta                                                |
+| **Stakeholders envolvidos**          | João Lima (Product Owner) — Carla Souza (Operações/Logística) |
+| **Solution Request / Card**          | [SR-2201](https://jira.shopsimples.com/browse/SR-2201)        |
+| **Substitui / Substituído por**      | N/A                                                           |
 
 ---
 
@@ -200,7 +200,7 @@ simulando pico de Black Friday sem erros de reembolso por falta de estoque.
 - [x] Validação com stakeholders de negócio impactados.
 - [x] Verificação de conformidade com princípios arquiteturais vigentes.
 - [x] Diagramas referenciados renderizam corretamente.
-- [x] `CHANGELOG.md` atualizado na seção `[Unreleased]`.
+- [ ] `CHANGELOG.md` atualizado na seção `[Unreleased]`.
 
 | Revisor | Papel | Parecer | Data |
 | --- | --- | --- | --- |

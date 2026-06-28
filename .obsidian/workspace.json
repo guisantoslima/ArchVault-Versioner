@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ee32c70728c9ab46",
+        "id": "e50e6436b12edb8d",
         "type": "tabs",
         "children": [
           {
-            "id": "9081c5d8d4fcc9e6",
+            "id": "709ae85c1752dea0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "docs/adrs/ADR-001-fluxo-finalizacao-compra.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "ADR-001-fluxo-finalizacao-compra"
             }
           }
         ]
@@ -180,14 +180,17 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "9081c5d8d4fcc9e6",
+  "active": "709ae85c1752dea0",
   "lastOpenFiles": [
+    "docs/roadmaps/roadmap-2026.md",
+    "docs/adrs/ADR-001-fluxo-finalizacao-compra.md",
     "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "README.md",
+    "docs/adrs/views/visao-logica.md",
     "docs/adrs/_template.md",
     "docs/adrs",
     "docs/archs/_template.md",
-    "CONTRIBUTING.md",
-    "README.md",
     "_changelog.md",
     "docs/archs/_changelog.md",
     "Bem-vindo.md",
