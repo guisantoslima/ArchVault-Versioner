@@ -1,7 +1,5 @@
 # 🏛️ ArchVault Versioner
 
-#-archvault-versioner
-
 <p align="center">
 
   <a href="https://git-scm.com">
