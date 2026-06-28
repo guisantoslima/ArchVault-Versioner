@@ -21,12 +21,14 @@
 </p>
 
 </br>
+
+  <img align=left display="flex" alt="logo" height="200" src="https://raw.githubusercontent.com/guisantoslima/ArchVault-Versioner/refs/heads/main/img/ArchVault-Versioner-logo.png" alt="ArchVault">
+
 </br>
-
-  <img align=right display="flex" alt="logo" height="200" src="https://raw.githubusercontent.com/guisantoslima/ArchVault-Versioner/refs/heads/main/img/ArchVault-Versioner-logo.png" alt="ArchVault">
-
+</br>
+</br>
 <strong>Versionamento inteligente de documentação arquitetural usando Git & GitHub como fonte única da verdade.</strong>
-
+</br>
 </br>
 </br>
 </br>
