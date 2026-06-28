@@ -54,8 +54,8 @@ O **ArchDoc Versioner** é um repositório modelo para organizar, rastrear e evo
 ### 1. Clone o template
 
 ```bash
-git clone https://github.com/guisantoslima/ArchVault-Versioner.git meu-projeto-arquitetura
-cd meu-projeto-arquitetura
+git clone https://github.com/guisantoslima/ArchVault-Versioner.git archvault-versioner
+cd archvault-versioner
 ```
 
 ### 2. Configure seu ambiente
@@ -69,10 +69,10 @@ git config --local user.email "seu.email@example.com"
 
 ```bash
 git checkout -b feat/arch-001-escolha-banco-dados
-cp docs/archs/_template.md docs/adrs/ARCH-001-escolha-banco-de-dados.md
+cp docs/archs/_template.md docs/adrs/ADR-001-escolha-banco-de-dados.md
 # edite o arquivo...
 git add .
-git commit -m "feat(arch): adiciona ARCH-001 sobre escolha do banco de dados"
+git commit -m "feat(adr): adiciona ADR-001 sobre escolha do banco de dados"
 ```
 
 ---
@@ -81,43 +81,45 @@ git commit -m "feat(arch): adiciona ARCH-001 sobre escolha do banco de dados"
 
 ```text
 📦 archvault-versioner
-├── 📁 docs/
-│   ├── 📁 adrs/                    # Architecture Decision Records
-│   │   ├── ADR-001-ex.md
-│   │   └── _template.md
-│   ├── 📁 diagrams/               # C4, UML, fluxos de dados
-│   │   ├── 📁 C1
-│   │   │   └── contexto-ex.puml
-│   │   ├── 📁 C2
-│   │   │   └── container-ex.puml
-│   │   ├── 📁 C3
-│   │   │   └── component-ex.puml
-│   │   ├── 📁 C4
-│   │   │   └── code-ex.puml
-│   ├── 📁 views/                  # Visões arquiteturais (lógica, física, etc.)
-│   │   ├── visao-logica.md
-│   │   ├── visao-processos.md
-│   │   ├── visao-desenvolvimento.md
-│   │   ├── visao-fisica.md
-│   │   └── visao-cenarios.md
-│   ├── 📁 glossario/               # Termos do domínio
-│   │   └── termos.md
-│   └── README.md                   # Guia de navegação dos docs
-├── 📁 .github/
-│   ├── 📁 workflows/               # CI/CD para docs
-│   │   ├── links.yml
-│   │   └── diagramas.yml
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   └── ISSUE_TEMPLATE/
-│       ├── nova-decisao-arquitetural.md
-│       └── revisao-de-documento.md
-├── 📁 scripts/
-│   ├── novo-adr.sh
-│   └── verificar-links.sh
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── LICENSE.md
-└── README.md
+  ├──📁 .obsidian
+  ├──📁 ArchVault/
+  │  ├── 📁 docs/
+  │  │   ├── 📁 adrs/                    # Architecture Decision Records
+  │  │   │   ├── ADR-001-ex.md
+  │  │   │   └── _template.md
+  │  │   ├── 📁 diagrams/               # C4, UML, fluxos de dados
+  │  │   │   ├── 📁 C1
+  │  │   │   │   └── contexto-ex.puml
+  │  │   │   ├── 📁 C2
+  │  │   │   │   └── container-ex.puml
+  │  │   │   ├── 📁 C3
+  │  │   │   │   └── component-ex.puml
+  │  │   │   ├── 📁 C4
+  │  │   │   │   └── code-ex.puml
+  │  │   ├── 📁 views/                  # Visões arquiteturais (lógica, física, etc.)
+  │  │   │   ├── visao-logica.md
+  │  │   │   ├── visao-processos.md
+  │  │   │   ├── visao-desenvolvimento.md
+  │  │   │   ├── visao-fisica.md
+  │  │   │   └── visao-cenarios.md
+  │  │   ├── 📁 roadmaps/               # Roadmaps e Planejamentos
+  │  │   │   └── roadmap-2026.md
+  │  │   └── README.md                   # Guia de navegação dos docs
+  │  ├── 📁 .github/
+  │  │   ├── 📁 workflows/               # CI/CD para docs
+  │  │   │   ├── links.yml
+  │  │   │   └── diagrams.yml
+  │  │   ├── PULL_REQUEST_TEMPLATE.md
+  │  │   └── ISSUE_TEMPLATE/
+  │  │       ├── nova-decisao-arquitetural.md
+  │  │       └── revisao-de-documento.md
+  │  └── 📁 scripts/
+  │      ├── novo-adr.sh
+  │      └── verificar-links.sh
+  ├── CHANGELOG.md
+  ├── CONTRIBUTING.md
+  ├── LICENSE.md
+  └── README.md
 ```
 
 ---
