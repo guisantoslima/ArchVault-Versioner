@@ -119,7 +119,8 @@ git commit -m "feat(adr): adiciona ADR-001 sobre escolha do banco de dados"
  ├── CHANGELOG.md
  ├── CONTRIBUTING.md
  ├── LICENSE.md
- └── README.md
+ ├── README.md
+ └── SECURITY.md
 ```
 
 ---
