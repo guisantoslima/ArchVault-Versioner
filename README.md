@@ -18,22 +18,10 @@
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT">
   </a>
 
-</p>
+  <img align=center alt="logo" height="200" src="https://raw.githubusercontent.com/guisantoslima/ArchVault-Versioner/refs/heads/main/img/ArchVault-Versioner-logo.png" alt="ArchVault">
 
-</br>
-
-  <img align=center display="flex" alt="logo" height="200" src="https://raw.githubusercontent.com/guisantoslima/ArchVault-Versioner/refs/heads/main/img/ArchVault-Versioner-logo.png" alt="ArchVault">
-
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
 <strong>Versionamento inteligente de documentação arquitetural usando Git & GitHub como fonte única da verdade.</strong>
+</p>
 
 ### 📑 Navegue pelo projeto
 
