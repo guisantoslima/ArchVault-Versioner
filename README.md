@@ -23,6 +23,7 @@
 
 <strong>Versionamento inteligente de documentação arquitetural usando Git & GitHub como fonte única da verdade.</strong>
 
+</br>
 
 ### 📑 Navegue pelo projeto
 
