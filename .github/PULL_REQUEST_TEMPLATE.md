@@ -27,7 +27,7 @@
 ## 🏷️ Impacto na versão semântica
 
 - [ ] `MAJOR` — Redesenho completo / quebra referências existentes
-- [ ] `MINOR` — Nova ARCH, visão ou diagrama
+- [ ] `MINOR` — Nova ADR, visão ou diagrama
 - [ ] `PATCH` — Correção ou revisão menor
 - [ ] Não se aplica (sem impacto em versão)
 

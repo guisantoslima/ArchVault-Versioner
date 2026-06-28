@@ -89,7 +89,7 @@ Mudanças no conteúdo do repositório seguem a mesma lógica de **MAJOR.MINOR.P
 | --- | --- | --- |
 | `MAJOR` | Arquitetura completamente redesenhada / mudança que quebra referências existentes | `v2.0.0` |
 | `MINOR` | Nova ADR, nova visão, novo diagrama | `v1.3.0` |
-| `PATCH` | Correções, revisões menores, typo | `v1.3.2` |
+| `PATCH` | Correções, revisões menores, tipo | `v1.3.2` |
 
 Quem decide o tipo de versão é o revisor responsável pelo merge, com base no impacto da mudança.
 
