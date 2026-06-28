@@ -1,0 +1,23 @@
+@startuml C1_System_Context_ShopSimples
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title Diagrama de Contexto do Sistema — ShopSimples (C1)
+
+Person(cliente, "Cliente", "Pessoa que navega e compra produtos na loja virtual")
+Person(operador, "Operador da Loja", "Funcionário responsável por gerenciar catálogo e pedidos")
+
+System(shopsimples, "ShopSimples", "Permite que clientes pesquisem produtos, adicionem ao carrinho, finalizem compras e acompanhem pedidos")
+
+System_Ext(gateway_pagamento, "Gateway de Pagamento", "Processa pagamentos com cartão de crédito e Pix (ex.: Stripe/PagSeguro)")
+System_Ext(servico_email, "Serviço de E-mail", "Envia e-mails transacionais (confirmação de pedido, recuperação de senha)")
+System_Ext(servico_frete, "Serviço de Frete", "Calcula prazo e valor de frete com base no CEP")
+
+Rel(cliente, shopsimples, "Pesquisa produtos, compra e acompanha pedidos", "HTTPS")
+Rel(operador, shopsimples, "Gerencia catálogo de produtos e status de pedidos", "HTTPS")
+
+Rel(shopsimples, gateway_pagamento, "Envia solicitação de cobrança e recebe confirmação", "HTTPS/REST")
+Rel(shopsimples, servico_email, "Solicita envio de e-mails transacionais", "HTTPS/SMTP API")
+Rel(shopsimples, servico_frete, "Consulta prazo e valor de frete", "HTTPS/REST")
+
+SHOW_LEGEND()
+@enduml

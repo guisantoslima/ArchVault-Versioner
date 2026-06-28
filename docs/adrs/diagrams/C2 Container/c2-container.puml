@@ -1,0 +1,36 @@
+@startuml C2_Container_ShopSimples
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title Diagrama de Containers — ShopSimples (C2)
+
+Person(cliente, "Cliente", "Pessoa que navega e compra produtos na loja virtual")
+Person(operador, "Operador da Loja", "Funcionário responsável por gerenciar catálogo e pedidos")
+
+System_Boundary(shopsimples, "ShopSimples") {
+    Container(spa_web, "Aplicação Web", "React, TypeScript", "Interface web onde o cliente navega pelo catálogo, monta o carrinho e finaliza a compra")
+    Container(painel_admin, "Painel Administrativo", "React, TypeScript", "Interface web usada pelo operador para gerenciar produtos e pedidos")
+    Container(api, "API de Aplicação", "Node.js, Express", "Expõe toda a lógica de negócio via API REST: catálogo, carrinho, pedidos, pagamento e usuários")
+    ContainerDb(banco_dados, "Banco de Dados", "PostgreSQL", "Armazena produtos, usuários, pedidos, itens de pedido e pagamentos")
+    Container(fila_pedidos, "Fila de Processamento de Pedidos", "RabbitMQ", "Desacopla a confirmação do pedido do processamento assíncrono de pagamento e emissão de nota fiscal")
+}
+
+System_Ext(gateway_pagamento, "Gateway de Pagamento", "Processa pagamentos com cartão de crédito e Pix")
+System_Ext(servico_email, "Serviço de E-mail", "Envia e-mails transacionais")
+System_Ext(servico_frete, "Serviço de Frete", "Calcula prazo e valor de frete")
+
+Rel(cliente, spa_web, "Usa", "HTTPS")
+Rel(operador, painel_admin, "Usa", "HTTPS")
+
+Rel(spa_web, api, "Consome", "JSON/HTTPS")
+Rel(painel_admin, api, "Consome", "JSON/HTTPS")
+
+Rel(api, banco_dados, "Lê e escreve dados", "SQL/TCP")
+Rel(api, fila_pedidos, "Publica evento de novo pedido", "AMQP")
+Rel(fila_pedidos, api, "Consome evento para processar pagamento e nota fiscal", "AMQP")
+
+Rel(api, gateway_pagamento, "Solicita cobrança", "HTTPS/REST")
+Rel(api, servico_email, "Solicita envio de e-mail", "HTTPS/SMTP API")
+Rel(api, servico_frete, "Consulta frete", "HTTPS/REST")
+
+SHOW_LEGEND()
+@enduml
