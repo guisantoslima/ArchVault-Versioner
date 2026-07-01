@@ -1,7 +1,7 @@
 <!--
   📌 COMO USAR ESTE TEMPLATE
 
-  1. Copie este arquivo para docs/adrs/ARCH-NNN-titulo-curto.md
+  1. Copie este arquivo para docs/adrs/ADR-NNN-titulo-curto.md
      (NNN = próximo número sequencial disponível).
   2. Preencha todas as seções — não delete seções, apenas indique "N/A"
      quando genuinamente não se aplicar.
