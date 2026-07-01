@@ -18,8 +18,10 @@
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT">
   </a>
 
-<strong>Versionamento inteligente de documentação arquitetural usando Git & GitHub como fonte única da verdade.</strong>
+</p>
 
+<p align="center">
+  <strong>Versionamento inteligente de documentação arquitetural usando Git & GitHub como fonte única da verdade.</strong>
 </p>
 
 ## 📑 Navegue pelo projeto
