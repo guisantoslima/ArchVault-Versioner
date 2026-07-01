@@ -81,13 +81,23 @@ git commit -m "feat(adr): adiciona ADR-001 sobre escolha do banco de dados"
 
 ```text
 📦 archvault-versioner
+ ├──📁 .github/
+ │  ├── 📁 ISSUE_TEMPLATE/
+ │  │   ├── bug_report.md
+ │  │   ├── nova-decisao-arquitetural.md
+ │  │   └── revisao-de-documento.md
+ │  ├── 📁 workflows/                        # CI/CD para docs
+ │  │   ├── codeql.yml
+ │  │   ├── diagrams.yml
+ │  │   ├── links.yml
+ │  │   └── PULL_REQUEST_TEMPLATE.md
  ├──📁 .obsidian
  ├──📁 ArchVault/
  │  ├── 📁 docs/
- │  │   ├── 📁 adrs/                    # Architecture Decision Records
+ │  │   ├── 📁 adrs/                        # Architecture Decision Records
  │  │   │   ├── ADR-001-ex.md
  │  │   │   └── _template.md
- │  │   ├── 📁 diagrams/               # C4, UML, fluxos de dados
+ │  │   ├── 📁 diagrams/                    # C4, UML, fluxos de dados
  │  │   │   ├── 📁 C1
  │  │   │   │   └── contexto-ex.puml
  │  │   │   ├── 📁 C2
@@ -96,26 +106,20 @@ git commit -m "feat(adr): adiciona ADR-001 sobre escolha do banco de dados"
  │  │   │   │   └── component-ex.puml
  │  │   │   ├── 📁 C4
  │  │   │   │   └── code-ex.puml
- │  │   ├── 📁 views/                  # Visões arquiteturais (lógica, física, etc.)
+ │  │   ├── 📁 views/                       # Visões arquiteturais (lógica, física, etc.)
  │  │   │   ├── visao-logica.md
  │  │   │   ├── visao-processos.md
  │  │   │   ├── visao-desenvolvimento.md
  │  │   │   ├── visao-fisica.md
  │  │   │   └── visao-cenarios.md
- │  │   ├── 📁 roadmaps/               # Roadmaps e Planejamentos
+ │  │   ├── 📁 roadmaps/                    # Roadmaps e Planejamentos
  │  │   │   └── roadmap-2026.md
- │  │   └── README.md                   # Guia de navegação dos docs
- │  ├── 📁 .github/
- │  │   ├── 📁 workflows/               # CI/CD para docs
- │  │   │   ├── links.yml
- │  │   │   └── diagrams.yml
- │  │   ├── PULL_REQUEST_TEMPLATE.md
- │  │   └── ISSUE_TEMPLATE/
- │  │       ├── nova-decisao-arquitetural.md
- │  │       └── revisao-de-documento.md
- │  └── 📁 scripts/
- │      ├── novo-adr.sh
- │      └── verificar-links.sh
+ │  │   └── README.md                       # Guia de navegação dos docs
+ │  ├── 📁 scripts/
+ │  │   ├── novo-adr.sh
+ │  │   └── verificar-links.sh
+ │  └── 📁 img/
+ │      └── ArchVault-Versioner-logo.png
  ├── CHANGELOG.md
  ├── CONTRIBUTING.md
  ├── LICENSE.md
