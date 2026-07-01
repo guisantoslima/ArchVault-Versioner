@@ -267,10 +267,6 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 ---
 
 <p align="center">
-  Feito com ❤️ para arquitetos de software que acreditam em documentação viva.
-</p>
-
-<p align="center">
   <a href="#-archvault-versioner">⬆️ Voltar ao topo</a>
 </p>
 
