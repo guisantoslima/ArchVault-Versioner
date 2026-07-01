@@ -229,7 +229,7 @@ Mudanças documentadas seguem o formato [Keep a Changelog](https://keepachangelo
 
 ```text
 
- Versão | Data | Solution Request | Feature| Branch | Responsável | Changes (PR)
+ Versão | Data | Solution Request | Feature | Branch | Responsável | Changes (PR)
 
 ```
 
