@@ -91,7 +91,6 @@ git commit -m "feat(adr): adiciona ADR-001 sobre escolha do banco de dados"
  │  │   ├── nova-decisao-arquitetural.md
  │  │   └── revisao-de-documento.md
  │  ├── 📁 workflows/                        # CI/CD para docs
- │  │   ├── codeql.yml
  │  │   ├── diagrams.yml
  │  │   ├── links.yml
  │  │   └── PULL_REQUEST_TEMPLATE.md
