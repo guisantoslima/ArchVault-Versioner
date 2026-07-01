@@ -18,7 +18,7 @@
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT">
   </a>
 
-<strong align="center">Versionamento inteligente de documentação arquitetural usando Git & GitHub como fonte única da verdade.</strong>
+<strong>Versionamento inteligente de documentação arquitetural usando Git & GitHub como fonte única da verdade.</strong>
 
 </p>
 
@@ -37,6 +37,7 @@ O **ArchDoc Versioner** é um repositório modelo para organizar, rastrear e evo
 
 > *"Arquitetura que não é versionada é arquitetura que não existe."*
 
+</br>
 </br>
 </br>
 
